@@ -20,7 +20,6 @@ const Hero = () => {
     <section 
       ref={containerRef} 
       id="home" 
-      style={{ position: 'relative' }}
       className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-8 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">

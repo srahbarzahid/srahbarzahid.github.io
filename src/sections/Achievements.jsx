@@ -5,7 +5,7 @@ import { achievementsData } from '../data/achievements';
 
 const Achievements = () => {
   return (
-    <section id="achievements" className="py-24">
+    <section id="achievements" className="relative py-24">
       <div className="max-w-7xl mx-auto px-8 md:px-12">
         <SectionTitle subtitle="Recognition" title="Key Achievements" />
 

@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard';
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-32">
+    <section id="projects" className="relative py-32">
       <div className="max-w-7xl mx-auto px-8 md:px-12">
         <SectionTitle subtitle="Work" title="Featured Projects" />
 

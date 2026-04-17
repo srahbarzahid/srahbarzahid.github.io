@@ -5,7 +5,7 @@ import { aboutData } from '../data/about';
 
 const About = () => {
   return (
-    <section id="about" className="py-24 overflow-hidden">
+    <section id="about" className="relative py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 md:px-12">
         <SectionTitle subtitle="About Me" title="My Professional Journey" />
         

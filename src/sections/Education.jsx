@@ -7,7 +7,7 @@ const Motion = motion;
 
 const Education = () => {
   return (
-    <section id="education" className="py-32 bg-dark-950/20">
+    <section id="education" className="relative py-32 bg-dark-950/20">
       <div className="max-w-7xl mx-auto px-8 md:px-12">
         <SectionTitle subtitle="Academic" title="Education" />
 

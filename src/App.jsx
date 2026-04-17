@@ -12,19 +12,18 @@ import Contact from './sections/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  useEffect(() => {
-    // Initialize Lenis for smooth momentum scrolling
-    const lenis = new Lenis({
-      duration: 1.2, // Smoother, standard duration
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      gestureOrientation: 'vertical',
-      smoothWheel: true,
-      wheelMultiplier: 1,
-      smoothTouch: false,
-      touchMultiplier: 2,
-      infinite: false,
-    });
+ useEffect(() => {
+  // Only run in browser environment
+  if (typeof window === 'undefined') return;
+
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    // ... rest of config
+  });
+  
+  // ... rest of code
+}, []);
 
     window.lenis = lenis;
 

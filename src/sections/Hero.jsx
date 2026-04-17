@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion as Motion, useScroll, useTransform } from 'framer-motion';
 import { heroData } from '../data/hero';
-import { HiArrowRight } from 'react-icons/hi';
+import { HiArrowRight, HiDownload } from 'react-icons/hi';
 import { FiArrowDown } from 'react-icons/fi';
 import heroImg from '../assets/rahbar.jpeg';
 
@@ -60,8 +60,12 @@ const Hero = () => {
               <a href={heroData.cta.primary.link} className="btn-primary">
                 {heroData.cta.primary.text} <HiArrowRight />
               </a>
-              <a href={heroData.cta.secondary.link} className="btn-outline">
-                {heroData.cta.secondary.text}
+              <a 
+                href={heroData.cta.resume.link} 
+                download 
+                className="btn-outline border-accent-teal/30 text-accent-teal hover:bg-accent-teal/5"
+              >
+                {heroData.cta.resume.text} <HiDownload />
               </a>
             </div>
           </Motion.div>

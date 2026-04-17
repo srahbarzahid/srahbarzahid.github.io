@@ -6,6 +6,6 @@ export const heroData = {
   tagline: "Building intelligent systems and robust backend architectures with Django and AI/ML. Based in Kerala, India.",
   cta: {
     primary: { text: "Get in touch", link: "#contact" },
-    secondary: { text: "View projects", link: "#projects" }
+    resume: { text: "Download CV", link: "/resume.pdf" }
   }
 };

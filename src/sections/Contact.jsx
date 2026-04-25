@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiMail, FiGithub, FiLinkedin, FiSend, FiCheckCircle, FiAlertCircle, FiPhone } from 'react-icons/fi';
+import { FiMail, FiGithub, FiLinkedin, FiSend, FiCheckCircle, FiAlertCircle, FiPhone, FiInstagram } from 'react-icons/fi';
 import { contactData } from '../data/contact';
 
 const Motion = motion;
@@ -108,7 +108,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="p-4 bg-dark-800 rounded-2xl border border-white/5 text-slate-400 hover:text-white hover:border-accent-indigo/50 transition-all duration-300"
                   >
-                    {social.name === 'Github' ? <FiGithub size={24} /> : <FiLinkedin size={24} />}
+                    {social.name === 'Github' ? <FiGithub size={24} /> : social.name === 'Linkedin' ? <FiLinkedin size={24} /> : <FiInstagram size={24} />}
                   </a>
                 ))}
               </div>

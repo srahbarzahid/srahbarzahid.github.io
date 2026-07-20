@@ -1,15 +1,15 @@
 export const experienceData = [
   {
     id: 1,
-    role: "Robotics Trainer and Developer",
-    company: "Pibots Robotics",
+    role: "Software Developer",
+    company: "Pibots Robotics Pvt. Ltd.",
     type: "On-site",
     duration: "Nov 2025 - Present",
     highlights: [
-      "Developing robotics hardware and software solutions using Arduino, ESP32, and Python.",
-      "Building and deploying responsive websites and mobile applications for robotics monitoring and control.",
-      "Designing and implementing robotics curriculum and training programs.",
-      "Conducting hands-on workshops on IoT, AI, and embedded systems."
+      "Developing and maintaining diverse software solutions including web applications, mobile apps, CRM systems, and LMS platforms.",
+      "Building scalable architectures and contributing to product development across various business domains.",
+      "Conducting training sessions and workshops for college students on software development lifecycles, workflows, and best practices.",
+      "Mentoring students on leveraging Artificial Intelligence to build modern, intelligent applications."
     ]
   }
 ];

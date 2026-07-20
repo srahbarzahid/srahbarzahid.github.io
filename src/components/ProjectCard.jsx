@@ -46,18 +46,20 @@ const ProjectCard = ({ project, index }) => {
           href={project.github} 
           target="_blank" 
           rel="noreferrer" 
-          className="text-slate-500 hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest"
+          className="inline-flex items-center gap-2 px-5 py-2.5 bg-dark-800 hover:bg-dark-700 border border-white/10 hover:border-white/20 text-slate-300 hover:text-white rounded-xl transition-all duration-300 text-xs font-bold uppercase tracking-widest shadow-lg shadow-black/20"
         >
-          <FiGithub size={18} /> Code
+          <FiGithub size={18} /> Source Code
         </a>
-        <a 
-          href="#" 
-          target="_blank" 
-          rel="noreferrer" 
-          className="text-accent-indigo hover:text-accent-mint transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest"
-        >
-          View Live <FiExternalLink size={18} />
-        </a>
+        {project.live && (
+          <a 
+            href={project.live} 
+            target="_blank" 
+            rel="noreferrer" 
+            className="text-accent-indigo hover:text-accent-mint transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest"
+          >
+            View Live <FiExternalLink size={18} />
+          </a>
+        )}
       </div>
 
       {/* Side Accent Line */}

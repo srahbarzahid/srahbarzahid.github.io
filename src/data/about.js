@@ -1,6 +1,6 @@
 export const aboutData = {
-  mainText: "A passionate software developer with a strong foundation in Python, Django, and AI/ML, along with hands-on experience in developing web and machine learning projects. Completed the Master of Computer Applications (MCA), with a focus on backend development and building scalable, efficient applications.",
-  subText: "Particularly interested in backend engineering and AI-driven systems that solve real-world problems. Actively seeking opportunities to apply technical skills, contribute to meaningful projects, and grow as a professional developer.",
+  mainText: "Passionate about building scalable software solutions and solving complex problems through technology. With hands-on experience in Python, Django, Artificial Intelligence, and Machine Learning, I enjoy developing robust backend systems, intelligent applications, and high-performance web solutions that deliver real-world value. My expertise includes backend development, RESTful API development, database design, and AI/ML integration, with a strong focus on writing clean, maintainable, and efficient code.",
+  subText: "I am committed to continuously learning new technologies and building reliable, scalable, and user-centric applications. Currently working as a Software Engineer at PiBots Robotics, I contribute to the development of software products, AI-powered applications, and automation solutions while collaborating with cross-functional teams. I am always eager to take on new challenges, expand my technical expertise, and contribute to innovative, high-impact projects.",
   stats: [
     { label: "Years Learning", value: "2+" },
     { label: "Projects Completed", value: "10+" }

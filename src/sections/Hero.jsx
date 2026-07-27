@@ -4,6 +4,7 @@ import { heroData } from '../data/hero';
 import { HiArrowRight, HiDownload } from 'react-icons/hi';
 import { FiArrowDown } from 'react-icons/fi';
 import heroImg from '../assets/rahbar.jpeg';
+import resumePdf from '../assets/RAHBAR ZAHID RESUME.pdf';
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -61,8 +62,10 @@ const Hero = () => {
                 {heroData.cta.primary.text} <HiArrowRight />
               </a>
               <a 
-                href={heroData.cta.resume.link} 
-                download 
+                href={resumePdf} 
+                download="RAHBAR ZAHID RESUME.pdf" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-outline border-accent-teal/30 text-accent-teal hover:bg-accent-teal/5"
               >
                 {heroData.cta.resume.text} <HiDownload />

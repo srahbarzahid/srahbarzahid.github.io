@@ -51,7 +51,7 @@ const Hero = () => {
             </h1>
 
             {/* Tagline */}
-            <p className="max-w-xl text-base text-slate-400 leading-relaxed font-light">
+            <p className="max-w-xl text-base text-slate-400 leading-relaxed font-light whitespace-pre-line">
               {heroData.tagline}
             </p>
 

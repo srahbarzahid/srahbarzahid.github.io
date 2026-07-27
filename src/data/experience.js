@@ -2,7 +2,7 @@ export const experienceData = [
   {
     id: 1,
     role: "Software Developer",
-    company: "Pibots Robotics Pvt. Ltd.",
+    company: "NexQ Global",
     type: "On-site",
     duration: "Nov 2025 - Present",
     highlights: [

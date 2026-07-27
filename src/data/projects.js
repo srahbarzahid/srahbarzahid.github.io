@@ -26,7 +26,7 @@ export const projectsData = [
     description: "An AI-powered system designed to recognize emotions from Malayalam speech using Deep Learning. Built using a CNN-based model with advanced audio feature extraction techniques like MFCC and Mel Spectrogram to classify emotions such as happiness, anger, sadness, and more.",
     tags: ["ML", "PYTHON", "CNN", "SCIKIT", "LIBROSA", "JUPYTER"],
     github: "https://github.com/srahbarzahid/SER-Malayalam",
-    live: "#",
+    live: "https://github.com/srahbarzahid/SER-Malayalam",
     image: "https://images.unsplash.com/photo-1576091160550-217359f49f4c?q=80&w=2070&auto=format&fit=crop"
   },
   {
@@ -36,7 +36,7 @@ export const projectsData = [
     description: "A machine learning-based system for predicting heart disease risk using clinical data such as age, cholesterol, and blood pressure. Implemented multiple models including KNN, Logistic Regression, and Random Forest with an ensemble approach for improved accuracy and reliability.",
     tags: ["PYTHON", "ML", "KNN", "RANDOM FOREST", "SCIKIT", "FLASK"],
     github: "https://github.com/srahbarzahid/Heart-Disease-prediction",
-    live: "#",
+    live: "https://heart-disease-knn.onrender.com/",
     image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2070&auto=format&fit=crop"
   }
 ];

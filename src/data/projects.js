@@ -13,7 +13,7 @@ export const projectsData = [
     title: "Expert System – ML UI Platform",
     subtitle: "FULL STACK + MACHINE LEARNING",
     description: "A web-based no-code machine learning platform that enables users to build, train, and evaluate models through an intuitive graphical interface. Supports classification, regression, and clustering with real-time visualization and model export capabilities.",
-    tags: ["DJANGO", "PYTHON", "SCIKIT", "PANDAS", "NUMPY", "ML", "PLOTLY", "D3.JS"],
+    tags: ["DJANGO", "PYTHON", "SCIKIT LEARN", "PANDAS", "NUMPY", "ML", "PLOTLY", "D3.JS"],
     github: "https://github.com/srahbarzahid/Expertsystem",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
   },

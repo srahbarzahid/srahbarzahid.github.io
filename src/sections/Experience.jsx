@@ -27,6 +27,14 @@ const Experience = () => {
                       <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-accent-teal">
                         {exp.company}
                       </span>
+                      {exp.location && (
+                        <>
+                          <span className="w-1 h-1 bg-dark-700 rounded-full" />
+                          <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-slate-400">
+                            {exp.location}
+                          </span>
+                        </>
+                      )}
                       <span className="w-1 h-1 bg-dark-700 rounded-full" />
                       <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-slate-500">
                         {exp.type}

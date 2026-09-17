@@ -1,15 +1,17 @@
 export const experienceData = [
   {
     id: 1,
-    role: "Software Developer",
-    company: "NexQ Global",
+    role: "Software Engineer",
+    company: "PiBots Robotics Pvt. Ltd.",
+    location: "Malappuram, Kerala",
     type: "On-site",
-    duration: "Nov 2025 - Present",
+    duration: "Aug 2025 - Present",
     highlights: [
-      "Developing and maintaining diverse software solutions including web applications, mobile apps, CRM systems, and LMS platforms.",
-      "Building scalable architectures and contributing to product development across various business domains.",
-      "Conducting training sessions and workshops for college students on software development lifecycles, workflows, and best practices.",
-      "Mentoring students on leveraging Artificial Intelligence to build modern, intelligent applications."
+      "Architected and deployed 4+ full-stack applications, including CRM, LMS, e-commerce, and branding platforms, using React JS, Node.js, Django, REST APIs, and PostgreSQL, serving 10+ enterprise clients.",
+      "Delivered 10+ production-ready features across the full SDLC (requirements analysis, development, deployment, post-release support) in collaboration with cross-functional teams to meet project deadlines.",
+      "Optimized database queries and implemented caching strategies, reducing API response time from 800ms to 150ms.",
+      "Trained 100+ students and interns in full-stack development using AI-powered tools and modern engineering practices."
     ]
   }
 ];
+

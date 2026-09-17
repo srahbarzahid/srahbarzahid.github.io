@@ -3,8 +3,8 @@ import { motion as Motion, useScroll, useTransform } from 'framer-motion';
 import { heroData } from '../data/hero';
 import { HiArrowRight, HiDownload } from 'react-icons/hi';
 import { FiArrowDown } from 'react-icons/fi';
-import heroImg from '../assets/rahbar.jpeg';
-import resumePdf from '../assets/RAHBAR ZAHID RESUME.pdf';
+import heroImg from '../assets/rahbar.png';
+import resumePdf from '../assets/Rahbar Zahid Resume.pdf';
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -79,7 +79,7 @@ const Hero = () => {
            style={{ y, opacity }}
            className="lg:col-span-5 relative"
         >
-          <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border border-white/5">
+          <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden grayscale-0 lg:grayscale lg:hover:grayscale-0 transition-all duration-700 shadow-2xl border border-white/5">
             <img 
               src={heroImg} 
               alt={`${heroData.firstName} ${heroData.lastName}`} 

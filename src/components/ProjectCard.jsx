@@ -11,7 +11,7 @@ const ProjectCard = ({ project, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1, duration: 0.5 }}
       viewport={{ once: true }}
-      className="group relative bg-dark-900 p-8 md:p-12 rounded-[2rem] border border-white/5 hover:border-accent-indigo/40 hover:bg-dark-800/50 transition-all duration-500 overflow-hidden flex flex-col justify-between h-full min-h-[350px]"
+      className="group relative bg-dark-900 p-6 sm:p-8 md:p-12 rounded-xl sm:rounded-[2rem] border border-white/5 hover:border-accent-indigo/40 hover:bg-dark-800/50 transition-all duration-500 overflow-hidden flex flex-col justify-between h-full min-h-[320px] sm:min-h-[350px]"
     >
       {/* Project Number (Subtle) */}
       <div className="absolute top-8 right-8 text-5xl font-black text-white/5 group-hover:text-accent-indigo/10 transition-colors pointer-events-none">

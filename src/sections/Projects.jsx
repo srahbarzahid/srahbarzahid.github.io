@@ -5,11 +5,11 @@ import ProjectCard from '../components/ProjectCard';
 
 const Projects = () => {
   return (
-    <section id="projects" className="relative py-32">
-      <div className="max-w-7xl mx-auto px-8 md:px-12">
+    <section id="projects" className="relative py-16 sm:py-24 md:py-32">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12">
         <SectionTitle subtitle="Work" title="Featured Projects" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-white/5 border border-white/5 rounded-[3rem] overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-white/5 border border-white/5 rounded-2xl sm:rounded-[3rem] overflow-hidden">
           {projectsData.map((project, i) => (
             <ProjectCard key={project.id} project={project} index={i} />
           ))}

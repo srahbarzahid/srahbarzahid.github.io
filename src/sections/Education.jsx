@@ -7,11 +7,11 @@ const Motion = motion;
 
 const Education = () => {
   return (
-    <section id="education" className="relative py-32 bg-dark-950/20">
-      <div className="max-w-7xl mx-auto px-8 md:px-12">
+    <section id="education" className="relative py-16 sm:py-24 md:py-32 bg-dark-950/20">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12">
         <SectionTitle subtitle="Academic" title="Education" />
 
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {educationData.map((edu, i) => (
             <Motion.div
               key={edu.id}
@@ -19,7 +19,7 @@ const Education = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="glass-card rounded-[3rem] p-10 md:p-14 relative overflow-hidden group hover:border-accent-indigo/30 transition-all duration-500"
+              className="glass-card rounded-2xl sm:rounded-[3rem] p-6 sm:p-10 md:p-14 relative overflow-hidden group hover:border-accent-indigo/30 transition-all duration-500"
             >
               <div className="flex flex-col md:flex-row items-center justify-between gap-10">
                 <div className="space-y-6 text-center md:text-left">

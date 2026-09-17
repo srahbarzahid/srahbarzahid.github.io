@@ -7,7 +7,7 @@ const SectionTitle = ({ subtitle, title, color = "text-accent-indigo" }) => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="space-y-4 mb-20"
+      className="space-y-4 mb-10 sm:mb-14 md:mb-20"
     >
       <div className="flex items-center gap-4">
         <div className="w-8 h-[1px] bg-accent-teal" />

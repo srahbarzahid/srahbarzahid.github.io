@@ -35,8 +35,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'py-4 bg-dark-900/80 backdrop-blur-xl border-b border-white/5' : 'py-8 bg-transparent'}`}>
-      <div className="max-w-7xl mx-auto px-8 md:px-12 flex items-center justify-between">
+    <nav className={`fixed top-0 left-0 right-0 w-full max-w-full z-50 transition-all duration-500 ${scrolled ? 'py-3 sm:py-4 bg-dark-900/80 backdrop-blur-xl border-b border-white/5' : 'py-4 sm:py-6 md:py-8 bg-transparent'}`}>
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 flex items-center justify-between">
         <Motion.a 
           href="#home"
           initial={{ opacity: 0, x: -20 }}
@@ -67,8 +67,12 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <HiX size={28} /> : <HiMenuAlt3 size={28} />}
+        <button 
+          className="md:hidden text-white p-2.5 -mr-1 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors focus:outline-none shrink-0" 
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Navigation Menu"
+        >
+          {isOpen ? <HiX size={22} /> : <HiMenuAlt3 size={22} />}
         </button>
       </div>
 

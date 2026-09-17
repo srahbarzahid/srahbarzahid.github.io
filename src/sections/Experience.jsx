@@ -5,11 +5,11 @@ import SectionTitle from '../components/SectionTitle';
 
 const Experience = () => {
   return (
-    <section id="experience" className="relative py-32">
-      <div className="max-w-7xl mx-auto px-8 md:px-12">
+    <section id="experience" className="relative py-16 sm:py-24 md:py-32">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12">
         <SectionTitle subtitle="Professional" title="Work Experience" />
 
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {experienceData.map((exp, i) => (
             <Motion.div
               key={exp.id}
@@ -17,7 +17,7 @@ const Experience = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2 }}
               viewport={{ once: true }}
-              className="glass-card rounded-[2rem] p-8 md:p-12 relative overflow-hidden group hover:border-accent-indigo/30 transition-all duration-500"
+              className="glass-card rounded-2xl sm:rounded-[2rem] p-6 sm:p-8 md:p-12 relative overflow-hidden group hover:border-accent-indigo/30 transition-all duration-500"
             >
               <div className="flex flex-col md:flex-row md:items-start justify-between gap-8">
                 <div className="space-y-6">

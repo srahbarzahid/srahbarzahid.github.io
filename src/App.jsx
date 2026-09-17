@@ -41,7 +41,7 @@ function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden w-full max-w-full">
       <Navbar />
       <main className="relative z-10">
         <Hero />

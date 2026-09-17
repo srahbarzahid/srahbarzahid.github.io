@@ -5,8 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-20 border-t border-white/5 bg-dark-950/40">
-      <div className="max-w-7xl mx-auto px-8 md:px-12 flex flex-col md:flex-row items-center justify-between gap-12">
+    <footer className="py-12 sm:py-16 md:py-20 border-t border-white/5 bg-dark-950/40">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
         <div className="space-y-4 text-center md:text-left">
           <h2 className="text-3xl font-serif font-black text-white">
             {heroData.firstName} {heroData.lastName}<span className="text-accent-indigo">.</span>

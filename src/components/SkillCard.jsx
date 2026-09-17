@@ -12,7 +12,7 @@ const SkillCard = ({ category, index }) => {
       whileInView={{ opacity: 1 }}
       transition={{ delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="bg-dark-900 p-10 space-y-8 hover:bg-dark-800/50 transition-colors h-full"
+      className="bg-dark-900 p-6 sm:p-8 md:p-10 space-y-6 sm:space-y-8 hover:bg-dark-800/50 transition-colors h-full"
     >
       <div className="flex items-center gap-4">
         {Icon && <Icon className="text-accent-indigo" size={24} />}

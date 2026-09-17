@@ -53,62 +53,62 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-32">
-      <div className="max-w-7xl mx-auto px-8 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section id="contact" className="relative py-16 sm:py-24 md:py-32">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 lg:gap-20 items-center">
           
           <Motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-10"
+            className="space-y-8 sm:space-y-10"
           >
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <div className="w-8 h-[1px] bg-accent-teal" />
                 <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-accent-teal">Connectivity</span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-black text-white px-2 leading-none">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white px-2 leading-none">
                 Get In <br />
                 <span className="text-accent-indigo italic">Touch.</span>
               </h2>
             </div>
 
-            <p className="text-slate-400 text-lg font-light leading-relaxed max-w-md">
+            <p className="text-slate-400 text-base sm:text-lg font-light leading-relaxed max-w-md">
               Whether you have a project in mind or just want to say hi, my inbox is always open.
             </p>
 
-            <div className="space-y-6 pt-6">
-              <a href={`mailto:${contactData.email}`} className="flex items-center gap-6 group">
-                <div className="p-4 bg-dark-800 rounded-2xl border border-white/5 text-accent-indigo group-hover:bg-accent-indigo group-hover:text-white transition-all duration-300">
-                  <FiMail size={24} />
+            <div className="space-y-6 pt-4 sm:pt-6">
+              <a href={`mailto:${contactData.email}`} className="flex items-center gap-4 sm:gap-6 group">
+                <div className="p-3.5 sm:p-4 bg-dark-800 rounded-2xl border border-white/5 text-accent-indigo group-hover:bg-accent-indigo group-hover:text-white transition-all duration-300 shrink-0">
+                  <FiMail size={22} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Email Address</p>
-                  <p className="text-xl font-medium text-white">{contactData.email}</p>
+                  <p className="text-sm sm:text-lg md:text-xl font-medium text-white break-all sm:break-normal">{contactData.email}</p>
                 </div>
               </a>
 
-              <a href={`tel:${contactData.phone.replace(/\s+/g, '')}`} className="flex items-center gap-6 group">
-                <div className="p-4 bg-dark-800 rounded-2xl border border-white/5 text-accent-teal group-hover:bg-accent-teal group-hover:text-white transition-all duration-300">
-                  <FiPhone size={24} />
+              <a href={`tel:${contactData.phone.replace(/\s+/g, '')}`} className="flex items-center gap-4 sm:gap-6 group">
+                <div className="p-3.5 sm:p-4 bg-dark-800 rounded-2xl border border-white/5 text-accent-teal group-hover:bg-accent-teal group-hover:text-white transition-all duration-300 shrink-0">
+                  <FiPhone size={22} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Phone Number</p>
-                  <p className="text-xl font-medium text-white">{contactData.phone}</p>
+                  <p className="text-sm sm:text-lg md:text-xl font-medium text-white">{contactData.phone}</p>
                 </div>
               </a>
 
-              <div className="flex gap-4 pt-4">
+              <div className="flex gap-4 pt-2 sm:pt-4">
                 {contactData.socials.map(social => (
                   <a
                     key={social.name}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-4 bg-dark-800 rounded-2xl border border-white/5 text-slate-400 hover:text-white hover:border-accent-indigo/50 transition-all duration-300"
+                    className="p-3.5 sm:p-4 bg-dark-800 rounded-2xl border border-white/5 text-slate-400 hover:text-white hover:border-accent-indigo/50 transition-all duration-300"
                   >
-                    {social.name === 'Github' ? <FiGithub size={24} /> : social.name === 'Linkedin' ? <FiLinkedin size={24} /> : <FiInstagram size={24} />}
+                    {social.name === 'Github' ? <FiGithub size={22} /> : social.name === 'Linkedin' ? <FiLinkedin size={22} /> : <FiInstagram size={22} />}
                   </a>
                 ))}
               </div>
@@ -120,7 +120,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="glass-card rounded-[3rem] p-12 md:p-16 space-y-8 relative"
+            className="glass-card rounded-2xl sm:rounded-[2.5rem] md:rounded-[3rem] p-6 sm:p-10 md:p-16 space-y-6 sm:space-y-8 relative"
           >
             <div className="space-y-2">
               <h3 className="text-2xl font-bold text-white">Send a Message</h3>

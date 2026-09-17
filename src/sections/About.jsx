@@ -9,8 +9,8 @@ const statIcons = [FiBriefcase, FiCode];
 
 const About = () => {
   return (
-    <section id="about" className="relative py-20 md:py-28 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-12">
+    <section id="about" className="relative py-16 sm:py-24 md:py-28 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12">
         <SectionTitle subtitle="About Me" title="My Professional Journey" />
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">

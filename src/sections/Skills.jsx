@@ -14,11 +14,11 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="relative py-32 bg-dark-950/20">
-      <div className="max-w-7xl mx-auto px-8 md:px-12">
+    <section id="skills" className="relative py-16 sm:py-24 md:py-32 bg-dark-950/20">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12">
         <SectionTitle subtitle="Capabilities" title="Technical Skills" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5 rounded-[2.5rem] overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5 rounded-2xl sm:rounded-[2.5rem] overflow-hidden">
           {categories.map((cat, i) => (
             <SkillCard key={cat.name} category={cat} index={i} />
           ))}

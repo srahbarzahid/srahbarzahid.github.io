@@ -5,11 +5,11 @@ import { achievementsData } from '../data/achievements';
 
 const Achievements = () => {
   return (
-    <section id="achievements" className="relative py-24">
-      <div className="max-w-7xl mx-auto px-8 md:px-12">
+    <section id="achievements" className="relative py-16 sm:py-24 md:py-32">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12">
         <SectionTitle subtitle="Recognition" title="Key Achievements" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {achievementsData.map((item, i) => (
             <Motion.div
               key={item.id}
@@ -17,7 +17,7 @@ const Achievements = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="glass-card p-8 rounded-[3rem] group hover:border-accent-indigo/40 transition-all duration-500 flex flex-col h-full"
+              className="glass-card p-6 sm:p-8 rounded-2xl sm:rounded-[3rem] group hover:border-accent-indigo/40 transition-all duration-500 flex flex-col h-full"
             >
               <div className="flex gap-6 items-start mb-6">
                 <div className="p-4 bg-dark-900 rounded-2xl border border-white/5 text-accent-indigo group-hover:bg-accent-indigo group-hover:text-white transition-all duration-500 shrink-0">
